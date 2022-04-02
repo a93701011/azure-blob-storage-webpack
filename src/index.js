@@ -20,15 +20,17 @@ const reportStatus = message => {
 }
 
 const accountname = "nowherestorage"
-const blobSasUrl =  `https://nowherestorage.blob.core.windows.net/?sv=2020-08-04&ss=bfqt&srt=sco&sp=rwdlacupx&se=2022-04-03T01:20:09Z&st=2022-04-02T17:20:09Z&spr=https&sig=d2SFl%2FKxy74c%2ByIyEUhezLfkB82np6g48hKTBS5tf5E%3D`
-
+const sas = "?sv=2020-08-04&ss=bfqt&srt=sco&sp=rwdlacupx&se=2022-04-03T01:20:09Z&st=2022-04-02T17:20:09Z&spr=https&sig=d2SFl%2FKxy74c%2ByIyEUhezLfkB82np6g48hKTBS5tf5E%3D"
+const blobSasUrl =  "https://nowherestorage.blob.core.windows.net?sv=2020-08-04&ss=bfqt&srt=sco&sp=rwdlacupx&se=2022-04-03T01:39:38Z&st=2022-04-02T17:39:38Z&spr=https&sig=mBgwvEgK18TGPwBJx4VCYxBecyjIw%2FgLsc1RC0OsZQE%3D"
 
 // Create a new BlobServiceClient
 const blobServiceClient = new BlobServiceClient(blobSasUrl);
 
 // Create a unique name for the container by 
 // appending the current time to the file name
-const containerName = "container" + new Date().getTime();
+// const containerName = "container" + new Date().getTime();
+
+const containerName = "sina"
 // Get a container client from the BlobServiceClient
 const containerClient = blobServiceClient.getContainerClient(containerName);
 
@@ -53,8 +55,8 @@ const deleteContainer = async () => {
     }
 };
 
-createContainerButton.addEventListener("click", createContainer);
-deleteContainerButton.addEventListener("click", deleteContainer);
+// createContainerButton.addEventListener("click", createContainer);
+// deleteContainerButton.addEventListener("click", deleteContainer);
 
 
 const listFiles = async () => {
