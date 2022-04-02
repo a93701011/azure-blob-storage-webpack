@@ -6,7 +6,7 @@
 </head>
 <html>
 <body>
-    
+    <div class="control">
     <button id="create-container-button">Create container</button>
     <button id="select-button">Select and upload files</button>
     <input type="file" id="file-input" multiple style="display: none;" />
@@ -14,9 +14,10 @@
     <button id="delete-button">Delete selected files</button>
     <button id="delete-container-button">Delete container</button>
     <button id="download-button">download</button>
-    <p><b>Status:</b></p>
+    </div>
+    <p class="info">Status:</p>
     <p id="status" style="height:160px; width: 593px; overflow: scroll;" />
-    <p><b>Files:</b></p>
+    <p class="info">Files:</p>
     <select id="file-list" multiple style="height:222px; width: 593px; overflow: scroll;" />
 </body>
 

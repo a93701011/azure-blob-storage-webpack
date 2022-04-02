@@ -1,3 +1,60 @@
-body {
-  background-color: lightblue;
+
+@font-face {
+  font-family: 'OCR-B 10 BT';
+  font-style: normal;
+  font-weight: 400;
+  src: local('OCR-B 10 BT'), 
+       url('/font/OCR-B 10.woff') format('woff'), 
+       url('/font/OCR-B 10.ttf') format("opentype");
 }
+
+/* *{
+  border: solid 1px #fff ;
+} */
+
+ html,body{
+  font-family:'OCR-B 10 BT';
+  background-color: #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  flex-direction: column;
+}
+
+.control{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 50px;
+}
+
+.info{
+  font-weight:500;
+  font-size: 20px;
+  color: white
+  
+}
+button {
+  display: inline-block;
+  margin-top: 20px;
+  /* width: 100%; */
+  background: rgb(204, 75, 107);
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:18px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  font-weight:700;
+  transition: all 0.3s ease 0s;
+  box-shadow: 0px 15px 20px rgba(204, 75, 107, 0.3);
+}
+
+button:hover{
+  box-shadow: 0px 15px 20px rgb(204, 75, 107, 0.5);
+  background: rgb(216, 117, 141);
+  transform: translateY(-7px);
+  
+} 
