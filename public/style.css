@@ -23,8 +23,8 @@
 }
 
 .control{
-  margin-top: 20px;
-  margin-bottom: 20px;
+
+  margin: 20px;
   height: 50px;
 }
 
@@ -34,6 +34,13 @@
   color: white
   
 }
+.selectinfo{
+  color: #262626;
+  font-family:'OCR-B 10 BT';
+  font-weight:500;
+  font-size: 20px;
+}
+
 button {
   display: inline-block;
   margin-top: 20px;
